@@ -1,0 +1,18 @@
+{
+    "sourceFile": "js/script.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1726859184880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1726859184880,
+            "name": "Commit-0",
+            "content": "function openSocialLink(url) {\r\n    window.open(url, '_blank');\r\n  }\r\n  "
+        }
+    ]
+}

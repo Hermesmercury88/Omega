@@ -1,0 +1,18 @@
+{
+    "sourceFile": "js/cock.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1726854085053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1726854085053,
+            "name": "Commit-0",
+            "content": "function showTime(){\r\n    var date = new Date();\r\n    var h = date.getHours(); // 0 - 23\r\n    var m = date.getMinutes(); // 0 - 59\r\n    var s = date.getSeconds(); // 0 - 59\r\n    var session = \"AM\";\r\n    \r\n    if(h == 0){\r\n        h = 12;\r\n    }\r\n    \r\n    if(h > 12){\r\n        h = h - 12;\r\n        session = \"PM\";\r\n    }\r\n    \r\n    h = (h < 10) ? \"0\" + h : h;\r\n    m = (m < 10) ? \"0\" + m : m;\r\n    s = (s < 10) ? \"0\" + s : s;\r\n    \r\n    var time = h + \":\" + m + \":\" + s + \" \" + session;\r\n    document.getElementById(\"MyClockDisplay\").innerText = time;\r\n    document.getElementById(\"MyClockDisplay\").textContent = time;\r\n    \r\n    setTimeout(showTime, 1000);\r\n    \r\n  }\r\n  \r\n  showTime();"
+        }
+    ]
+}

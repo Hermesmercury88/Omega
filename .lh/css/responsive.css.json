@@ -1,0 +1,154 @@
+{
+    "sourceFile": "css/responsive.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 34,
+            "patches": [
+                {
+                    "date": 1726820979963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1726820998135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -188,22 +188,10 @@\n     }\r\n }\r\n \r\n @media (max-width: 360px) {\r\n-    .about_section .about_container {\r\n-        flex-direction: column; /* ให้กล่องข้อความและรูปภาพจัดเรียงในแนวตั้ง */\r\n-        padding: 20px; /* ลด padding เพื่อประหยัดพื้นที่ */\r\n-    }\r\n     \r\n-    .about_section .detail-box p {\r\n-        font-size: 12px; /* ลดขนาดข้อความ */\r\n-    }\r\n-    \r\n-    .footer_section p {\r\n-        font-size: 10px; /* ลดขนาดฟอนต์ใน footer สำหรับหน้าจอเล็ก */\r\n-    }\r\n }\r\n-}\r\n \r\n @media (min-width: 1200px) {\r\n     .container {\r\n         max-width: 1170px;\r\n"
+                },
+                {
+                    "date": 1726823910331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,9 +106,9 @@\n         background-size: auto;\r\n     }\r\n \r\n     .class_section .class_box-container .box .img-box .detail-box button {\r\n-        width: 45px;\r\n+        width: 50px;\r\n         height: 45px;\r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1726823919574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,9 +106,9 @@\n         background-size: auto;\r\n     }\r\n \r\n     .class_section .class_box-container .box .img-box .detail-box button {\r\n-        width: 50px;\r\n+        width: px;\r\n         height: 45px;\r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1726823949843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -102,13 +102,14 @@\n \r\n \r\n \r\n     .about_section .about_container {\r\n+        padding: 45px 25px; \r\n         background-size: auto;\r\n     }\r\n \r\n     .class_section .class_box-container .box .img-box .detail-box button {\r\n-        width: px;\r\n+        width: 60px;\r\n         height: 45px;\r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1726824055333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,8 +106,13 @@\n         padding: 45px 25px; \r\n         background-size: auto;\r\n     }\r\n \r\n+    .container {\r\n+        max-width: 1170px; /* หรือค่าที่ต้องการ */\r\n+        margin: 0 auto; /* ทำให้กึ่งกลาง */\r\n+    }\r\n+\r\n     .class_section .class_box-container .box .img-box .detail-box button {\r\n         width: 60px;\r\n         height: 45px;\r\n \r\n"
+                },
+                {
+                    "date": 1726824071865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,13 +106,10 @@\n         padding: 45px 25px; \r\n         background-size: auto;\r\n     }\r\n \r\n-    .container {\r\n-        max-width: 1170px; /* หรือค่าที่ต้องการ */\r\n-        margin: 0 auto; /* ทำให้กึ่งกลาง */\r\n-    }\r\n \r\n+\r\n     .class_section .class_box-container .box .img-box .detail-box button {\r\n         width: 60px;\r\n         height: 45px;\r\n \r\n"
+                },
+                {
+                    "date": 1726826787654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,13 +107,11 @@\n         background-size: auto;\r\n     }\r\n \r\n \r\n-\r\n     .class_section .class_box-container .box .img-box .detail-box button {\r\n         width: 60px;\r\n         height: 45px;\r\n-\r\n     }\r\n \r\n     .class_section .class_box-container .box .img-box .detail-box button img {\r\n         width: 15px;\r\n"
+                },
+                {
+                    "date": 1726826793265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,8 +110,12 @@\n \r\n     .class_section .class_box-container .box .img-box .detail-box button {\r\n         width: 60px;\r\n         height: 45px;\r\n+        display: flex;  // ใช้ flexbox จัดการเลย์เอาท์\r\n+        flex-wrap: wrap; // ให้ส่วนประกอบที่เกินออกไปอยู่ในบรรทัดถัดไป\r\n+        align-items: center; // จัดแนวกลางในแนวตั้ง (ถ้าจำเป็น)\r\n+        justify-content: space-between; // กระจายพื้นที่ระหว่าง\r\n     }\r\n \r\n     .class_section .class_box-container .box .img-box .detail-box button img {\r\n         width: 15px;\r\n"
+                },
+                {
+                    "date": 1726826798660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,9 +110,9 @@\n \r\n     .class_section .class_box-container .box .img-box .detail-box button {\r\n         width: 60px;\r\n         height: 45px;\r\n-        display: flex;  // ใช้ flexbox จัดการเลย์เอาท์\r\n+        display: flex;  \r\n         flex-wrap: wrap; // ให้ส่วนประกอบที่เกินออกไปอยู่ในบรรทัดถัดไป\r\n         align-items: center; // จัดแนวกลางในแนวตั้ง (ถ้าจำเป็น)\r\n         justify-content: space-between; // กระจายพื้นที่ระหว่าง\r\n     }\r\n"
+                },
+                {
+                    "date": 1726826804342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,10 +110,11 @@\n \r\n     .class_section .class_box-container .box .img-box .detail-box button {\r\n         width: 60px;\r\n         height: 45px;\r\n+\r\n         display: flex;  \r\n-        flex-wrap: wrap; // ให้ส่วนประกอบที่เกินออกไปอยู่ในบรรทัดถัดไป\r\n+        flex-wrap: wrap; \r\n         align-items: center; // จัดแนวกลางในแนวตั้ง (ถ้าจำเป็น)\r\n         justify-content: space-between; // กระจายพื้นที่ระหว่าง\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1726826809881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,10 +113,10 @@\n         height: 45px;\r\n \r\n         display: flex;  \r\n         flex-wrap: wrap; \r\n-        align-items: center; // จัดแนวกลางในแนวตั้ง (ถ้าจำเป็น)\r\n-        justify-content: space-between; // กระจายพื้นที่ระหว่าง\r\n+        align-items: center; \r\n+        justify-content: space-between; \r\n     }\r\n \r\n     .class_section .class_box-container .box .img-box .detail-box button img {\r\n         width: 15px;\r\n"
+                },
+                {
+                    "date": 1726826856013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,10 +113,8 @@\n         height: 45px;\r\n \r\n         display: flex;  \r\n         flex-wrap: wrap; \r\n-        align-items: center; \r\n-        justify-content: space-between; \r\n     }\r\n \r\n     .class_section .class_box-container .box .img-box .detail-box button img {\r\n         width: 15px;\r\n"
+                },
+                {
+                    "date": 1726826892427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,4 +201,11 @@\n         max-width: 1170px;\r\n     }\r\n \r\n }\r\n+\r\n+// Media Queries สำหรับหน้าจอขนาดเล็ก\r\n+@media (max-width: 768px) {\r\n+  .about_container {\r\n+    flex-direction: column; // บังคับให้แสดงผลแนวตั้งเมื่อหน้าจอเล็ก\r\n+  }\r\n+}\r\n"
+                },
+                {
+                    "date": 1726826905666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -202,9 +202,8 @@\n     }\r\n \r\n }\r\n \r\n-// Media Queries สำหรับหน้าจอขนาดเล็ก\r\n @media (max-width: 768px) {\r\n   .about_container {\r\n     flex-direction: column; // บังคับให้แสดงผลแนวตั้งเมื่อหน้าจอเล็ก\r\n   }\r\n"
+                },
+                {
+                    "date": 1726826944952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,8 +177,11 @@\n     }\r\n }\r\n \r\n @media (max-width: 480px) {\r\n+    .about_section .about_container {\r\n+        flex-direction: column; /* จัดเรียงเป็นแนวตั้งสำหรับหน้าจอเล็ก */\r\n+        padding: 30px 10px; /* ลด padding ลงเพื่อประหยัดพื้นที่ */\r\n }\r\n \r\n @media (max-width: 400px) {\r\n     .slider_section .slider_heading {\r\n@@ -204,7 +207,7 @@\n }\r\n \r\n @media (max-width: 768px) {\r\n   .about_container {\r\n-    flex-direction: column; // บังคับให้แสดงผลแนวตั้งเมื่อหน้าจอเล็ก\r\n+    flex-direction: column; \r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1726826951025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,9 +178,9 @@\n }\r\n \r\n @media (max-width: 480px) {\r\n     .about_section .about_container {\r\n-        flex-direction: column; /* จัดเรียงเป็นแนวตั้งสำหรับหน้าจอเล็ก */\r\n+        flex-direction: column; \r\n         padding: 30px 10px; /* ลด padding ลงเพื่อประหยัดพื้นที่ */\r\n }\r\n \r\n @media (max-width: 400px) {\r\n"
+                },
+                {
+                    "date": 1726826993292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -179,10 +179,10 @@\n \r\n @media (max-width: 480px) {\r\n     .about_section .about_container {\r\n         flex-direction: column; \r\n-        padding: 30px 10px; /* ลด padding ลงเพื่อประหยัดพื้นที่ */\r\n-}\r\n+        padding: 30px 10px; \r\n+    }\r\n \r\n @media (max-width: 400px) {\r\n     .slider_section .slider_heading {\r\n         left: -125px;\r\n"
+                },
+                {
+                    "date": 1726827005066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -181,9 +181,22 @@\n     .about_section .about_container {\r\n         flex-direction: column; \r\n         padding: 30px 10px; \r\n     }\r\n+    \r\n+.about_section .detail-box h2 {\r\n+    font-size: 24px; /* ลดขนาดฟอนต์เพื่อให้พอดีกับหน้าจอ */\r\n+}\r\n \r\n+.about_section .detail-box p {\r\n+    font-size: 14px; /* ลดขนาดฟอนต์ของข้อความในกล่อง */\r\n+}\r\n+\r\n+.about_section .detail-box a {\r\n+    font-size: 12px; /* ลดขนาดปุ่มลง */\r\n+}\r\n+}\r\n+\r\n @media (max-width: 400px) {\r\n     .slider_section .slider_heading {\r\n         left: -125px;\r\n         opacity: .2;\r\n"
+                },
+                {
+                    "date": 1726827012844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -183,13 +183,13 @@\n         padding: 30px 10px; \r\n     }\r\n     \r\n .about_section .detail-box h2 {\r\n-    font-size: 24px; /* ลดขนาดฟอนต์เพื่อให้พอดีกับหน้าจอ */\r\n+    font-size: 24px; \r\n }\r\n \r\n .about_section .detail-box p {\r\n-    font-size: 14px; /* ลดขนาดฟอนต์ของข้อความในกล่อง */\r\n+    font-size: 14px; \r\n }\r\n \r\n .about_section .detail-box a {\r\n     font-size: 12px; /* ลดขนาดปุ่มลง */\r\n"
+                },
+                {
+                    "date": 1726827031135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,9 +191,9 @@\n     font-size: 14px; \r\n }\r\n \r\n .about_section .detail-box a {\r\n-    font-size: 12px; /* ลดขนาดปุ่มลง */\r\n+    font-size: 12px; \r\n }\r\n }\r\n \r\n @media (max-width: 400px) {\r\n@@ -208,10 +208,22 @@\n     }\r\n }\r\n \r\n @media (max-width: 360px) {\r\n+    .about_section .about_container {\r\n+        flex-direction: column; /* ให้กล่องข้อความและรูปภาพจัดเรียงในแนวตั้ง */\r\n+        padding: 20px; /* ลด padding เพื่อประหยัดพื้นที่ */\r\n+    }\r\n     \r\n+    .about_section .detail-box p {\r\n+        font-size: 12px; /* ลดขนาดข้อความ */\r\n+    }\r\n+    \r\n+    .footer_section p {\r\n+        font-size: 10px; /* ลดขนาดฟอนต์ใน footer สำหรับหน้าจอเล็ก */\r\n+    }\r\n }\r\n+}\r\n \r\n @media (min-width: 1200px) {\r\n     .container {\r\n         max-width: 1170px;\r\n"
+                },
+                {
+                    "date": 1726827039003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,9 +209,9 @@\n }\r\n \r\n @media (max-width: 360px) {\r\n     .about_section .about_container {\r\n-        flex-direction: column; /* ให้กล่องข้อความและรูปภาพจัดเรียงในแนวตั้ง */\r\n+        flex-direction: column; \r\n         padding: 20px; /* ลด padding เพื่อประหยัดพื้นที่ */\r\n     }\r\n     \r\n     .about_section .detail-box p {\r\n@@ -221,9 +221,8 @@\n     .footer_section p {\r\n         font-size: 10px; /* ลดขนาดฟอนต์ใน footer สำหรับหน้าจอเล็ก */\r\n     }\r\n }\r\n-}\r\n \r\n @media (min-width: 1200px) {\r\n     .container {\r\n         max-width: 1170px;\r\n"
+                },
+                {
+                    "date": 1726827047671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,13 +210,13 @@\n \r\n @media (max-width: 360px) {\r\n     .about_section .about_container {\r\n         flex-direction: column; \r\n-        padding: 20px; /* ลด padding เพื่อประหยัดพื้นที่ */\r\n+        padding: 20px; \r\n     }\r\n     \r\n     .about_section .detail-box p {\r\n-        font-size: 12px; /* ลดขนาดข้อความ */\r\n+        font-size: 12px; \r\n     }\r\n     \r\n     .footer_section p {\r\n         font-size: 10px; /* ลดขนาดฟอนต์ใน footer สำหรับหน้าจอเล็ก */\r\n"
+                },
+                {
+                    "date": 1726827053535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -218,9 +218,9 @@\n         font-size: 12px; \r\n     }\r\n     \r\n     .footer_section p {\r\n-        font-size: 10px; /* ลดขนาดฟอนต์ใน footer สำหรับหน้าจอเล็ก */\r\n+        font-size: 10px;\r\n     }\r\n }\r\n \r\n @media (min-width: 1200px) {\r\n"
+                },
+                {
+                    "date": 1726827082437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -207,8 +207,9 @@\n         display: none;\r\n     }\r\n }\r\n \r\n+\r\n @media (max-width: 360px) {\r\n     .about_section .about_container {\r\n         flex-direction: column; \r\n         padding: 20px; \r\n"
+                },
+                {
+                    "date": 1726827087898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -207,9 +207,9 @@\n         display: none;\r\n     }\r\n }\r\n \r\n-\r\n+<\r\n @media (max-width: 360px) {\r\n     .about_section .about_container {\r\n         flex-direction: column; \r\n         padding: 20px; \r\n"
+                },
+                {
+                    "date": 1726827096546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -207,9 +207,8 @@\n         display: none;\r\n     }\r\n }\r\n \r\n-<\r\n @media (max-width: 360px) {\r\n     .about_section .about_container {\r\n         flex-direction: column; \r\n         padding: 20px; \r\n"
+                },
+                {
+                    "date": 1726830015681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,11 @@\n     }\r\n \r\n     .slider_section .slider_heading {\r\n         top: 75px;\r\n+\r\n+        left: 0;\r\n+        \r\n     }\r\n \r\n     .slider_section .slider_heading h2 {\r\n         font-size: 7rem;\r\n"
+                },
+                {
+                    "date": 1726830027610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n     .slider_section .slider_heading {\r\n         top: 75px;\r\n \r\n         left: 0;\r\n-        \r\n+        text-align: center; \r\n     }\r\n \r\n     .slider_section .slider_heading h2 {\r\n         font-size: 7rem;\r\n"
+                },
+                {
+                    "date": 1726830033070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,9 @@\n         top: 75px;\r\n \r\n         left: 0;\r\n         text-align: center; \r\n+        opacity: 1; \r\n     }\r\n \r\n     .slider_section .slider_heading h2 {\r\n         font-size: 7rem;\r\n"
+                },
+                {
+                    "date": 1726830070281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,8 +90,9 @@\n     }\r\n }\r\n \r\n @media (max-width: 767px) {\r\n+    \r\n     .slider_section #carouselExampleIndicators {\r\n         align-items: center;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1726830083495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,9 +90,9 @@\n     }\r\n }\r\n \r\n @media (max-width: 767px) {\r\n-    \r\n+\r\n     .slider_section #carouselExampleIndicators {\r\n         align-items: center;\r\n     }\r\n \r\n@@ -101,9 +101,9 @@\n     }\r\n \r\n     .slider_section .slider_heading {\r\n         left: 0;\r\n-        opacity: .4;\r\n+        opacity: 0.4;\r\n     }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1726830116913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,11 +55,9 @@\n \r\n     .slider_section .slider_heading {\r\n         top: 75px;\r\n \r\n-        left: 0;\r\n-        text-align: center; \r\n-        opacity: 1; \r\n+   \r\n     }\r\n \r\n     .slider_section .slider_heading h2 {\r\n         font-size: 7rem;\r\n"
+                },
+                {
+                    "date": 1726852726056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,8 @@\n \r\n     .slider_section .slider_heading {\r\n         top: 75px;\r\n \r\n-   \r\n     }\r\n \r\n     .slider_section .slider_heading h2 {\r\n         font-size: 7rem;\r\n@@ -151,9 +150,9 @@\n         padding-right: 20px;\r\n     }\r\n \r\n     .footer_section .social_box {\r\n-        justify-content: center;\r\n+        justify-content: พ;\r\n     }\r\n \r\n     .footer_section .social_box a {\r\n         margin: 0 10px;\r\n"
+                },
+                {
+                    "date": 1726852731248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -150,9 +150,9 @@\n         padding-right: 20px;\r\n     }\r\n \r\n     .footer_section .social_box {\r\n-        justify-content: พ;\r\n+        justify-content: le;\r\n     }\r\n \r\n     .footer_section .social_box a {\r\n         margin: 0 10px;\r\n"
+                }
+            ],
+            "date": 1726820979963,
+            "name": "Commit-0",
+            "content": "@media (max-width: 1250px) {\r\n    .header_section::before {\r\n        width: 75%;\r\n    }\r\n\r\n    .header_section {\r\n        clip-path: polygon(50% 0%, 100% 0, 100% 100%, 22% 100%, 20% 86%, 0 84%, 0 0);\r\n\r\n    }\r\n\r\n}\r\n\r\n@media (max-width: 1120px) {}\r\n\r\n@media (max-width: 992px) {\r\n    .hero_area {\r\n        height: auto;\r\n    }\r\n\r\n    .hero_area::before {\r\n\r\n        background: linear-gradient(to bottom, transparent, #9b8f9a);\r\n\r\n    }\r\n\r\n    .navbar-brand.brand_mobile {\r\n        display: flex;\r\n    }\r\n\r\n    .navbar-brand.brand_desktop {\r\n        display: none;\r\n    }\r\n\r\n    .header_section .main_nav {\r\n        flex: 1;\r\n    }\r\n\r\n    #navbarSupportedContent {\r\n        margin-top: 15px;\r\n    }\r\n\r\n    .header_section {\r\n        padding: 10px 0;\r\n        clip-path: none;\r\n    }\r\n\r\n    .header_section::before,\r\n    .main_nav .top_nav {\r\n        display: none;\r\n    }\r\n\r\n    .slider_section {\r\n        padding: 45px 0;\r\n    }\r\n\r\n    .slider_section .slider_heading {\r\n        top: 75px;\r\n    }\r\n\r\n    .slider_section .slider_heading h2 {\r\n        font-size: 7rem;\r\n    }\r\n\r\n    .class_section .owl-carousel .owl-nav {\r\n\r\n        flex-direction: row;\r\n        top: initial;\r\n        bottom: -45px;\r\n        right: 50%;\r\n        transform: translateX(50%);\r\n\r\n    }\r\n\r\n    .class_section .owl-carousel .owl-nav .owl-prev,\r\n    .class_section .owl-carousel .owl-nav .owl-next {\r\n        margin: 2px 5px;\r\n    }\r\n\r\n    .class_section .class_container {\r\n        margin-bottom: 75px;\r\n    }\r\n\r\n    .sub_page .class_section .owl-carousel .owl-nav {\r\n        top: initial;\r\n        bottom: 65px;\r\n    }\r\n}\r\n\r\n@media (max-width: 767px) {\r\n    .slider_section #carouselExampleIndicators {\r\n        align-items: center;\r\n    }\r\n\r\n    .slider_section #carouselExampleIndicators .box {\r\n        justify-content: center;\r\n    }\r\n\r\n    .slider_section .slider_heading {\r\n        left: 0;\r\n        opacity: .4;\r\n    }\r\n\r\n\r\n\r\n    .about_section .about_container {\r\n        background-size: auto;\r\n    }\r\n\r\n    .class_section .class_box-container .box .img-box .detail-box button {\r\n        width: 45px;\r\n        height: 45px;\r\n\r\n    }\r\n\r\n    .class_section .class_box-container .box .img-box .detail-box button img {\r\n        width: 15px;\r\n        margin-left: 3px;\r\n    }\r\n\r\n    .blog_section .box .detail-box {\r\n        margin-left: 25px;\r\n    }\r\n\r\n    .blog_section .box.b2 .detail-box {\r\n\r\n        padding-left: 0;\r\n        padding-right: 25px;\r\n\r\n    }\r\n\r\n    .blog_section .box.b2 .detail-box .img_date {\r\n        left: 0;\r\n    }\r\n\r\n    .info_section .info_main-row {\r\n        flex-direction: column-reverse;\r\n    }\r\n\r\n    .info_section .contact_section {\r\n        margin-top: 45px;\r\n    }\r\n\r\n    .info_section .contact_section form {\r\n        padding-right: 20px;\r\n    }\r\n\r\n    .footer_section .social_box {\r\n        justify-content: center;\r\n    }\r\n\r\n    .footer_section .social_box a {\r\n        margin: 0 10px;\r\n    }\r\n\r\n    .footer_section p {\r\n        text-align: center;\r\n    }\r\n\r\n}\r\n\r\n@media (max-width: 576px) {\r\n    .slider_section .slider_heading {\r\n        left: -70px;\r\n    }\r\n\r\n    .about_section .about_container {\r\n\r\n        padding: 45px 15px 45px 25px;\r\n    }\r\n\r\n    .client_section .box {\r\n        margin: 0;\r\n    }\r\n}\r\n\r\n@media (max-width: 480px) {\r\n}\r\n\r\n@media (max-width: 400px) {\r\n    .slider_section .slider_heading {\r\n        left: -125px;\r\n        opacity: .2;\r\n    }\r\n\r\n    .slider_section .carousel-control-prev,\r\n    .slider_section .carousel-control-next {\r\n        display: none;\r\n    }\r\n}\r\n\r\n@media (max-width: 360px) {\r\n    .about_section .about_container {\r\n        flex-direction: column; /* ให้กล่องข้อความและรูปภาพจัดเรียงในแนวตั้ง */\r\n        padding: 20px; /* ลด padding เพื่อประหยัดพื้นที่ */\r\n    }\r\n    \r\n    .about_section .detail-box p {\r\n        font-size: 12px; /* ลดขนาดข้อความ */\r\n    }\r\n    \r\n    .footer_section p {\r\n        font-size: 10px; /* ลดขนาดฟอนต์ใน footer สำหรับหน้าจอเล็ก */\r\n    }\r\n}\r\n}\r\n\r\n@media (min-width: 1200px) {\r\n    .container {\r\n        max-width: 1170px;\r\n    }\r\n\r\n}\r\n"
+        }
+    ]
+}

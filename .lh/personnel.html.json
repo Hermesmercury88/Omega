@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 26,
+            "activePatchIndex": 27,
             "patches": [
                 {
                     "date": 1726858559357,
@@ -112,6 +112,10 @@
                 {
                     "date": 1727268845885,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -102,10 +102,10 @@\n           <div class=\"social_box\">\r\n             <a href=\"https://www.instagram.com/d_bienenkonigin/\">\r\n               <img src=\"images/instagram.png\" alt=\"\">\r\n             </a>\r\n-            <a href=\"\">\r\n-              <img src=\"./images/l\" alt=\"\">\r\n+            <a href=\"https://www.canva.com/design/DAGRsMJBro4/_XhTQ71tiyI93afGKI07oA/view?utm_content=DAGRsMJBro4&utm_campaign=designshare&utm_medium=link&utm_source=editor\">\r\n+              <img src=\"./images/link.png\" alt=\"\">\r\n             </a>\r\n             </a>\r\n           </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1727406659628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,9 +178,11 @@\n           <div class=\"social_box\">\r\n             <a href=\"https://www.instagram.com/nazanacho?igsh=YnRhdGhsbTV3ZGh2&utm_source=qr\">\r\n               <img src=\"images/instagram.png\" alt=\"\">\r\n             </a>\r\n-            \r\n+            <a href=\"https://www.canva.com/design/DAGRsMJBro4/_XhTQ71tiyI93afGKI07oA/view?utm_content=DAGRsMJBro4&utm_campaign=designshare&utm_medium=link&utm_source=editor\">\r\n+              <img src=\"./images/link.png\" alt=\"\">\r\n+            </a>\r\n           </div>\r\n         </div>\r\n       </div>\r\n \r\n"
                 }
             ],
             "date": 1726858559357,
